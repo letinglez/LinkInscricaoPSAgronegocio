@@ -539,3 +539,62 @@
 .largura-total{
     grid-column:1 / -1;
 }
+
+.secao-formulario{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.descricao-secao{
+    color:#64748b;
+    margin-bottom:10px;
+}
+
+.campo{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+.campo label{
+    font-weight:600;
+    color:#1a3a6b;
+}
+
+.campo input,
+.campo select{
+    width:100%;
+    padding:14px;
+    border:1px solid #d9dee8;
+    border-radius:8px;
+    font-size:15px;
+}
+
+.campo input:focus,
+.campo select:focus{
+    outline:none;
+    border-color:#2d9c5c;
+    box-shadow:0 0 0 3px rgba(45,156,92,.15);
+}
+
+.feedback{
+    color:#64748b;
+    font-size:13px;
+}
+
+.linha{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.campo-checkbox{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.oculto{
+    display:none;
+}
