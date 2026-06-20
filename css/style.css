@@ -639,3 +639,13 @@
 .btn-secundario:hover{
     background:#f5f7fa;
 }
+
+.botoes-wizard{
+    display:flex;
+    justify-content:space-between;
+
+    margin-top:40px;
+    padding-top:20px;
+
+    border-top:1px solid #e2e8f0;
+}
