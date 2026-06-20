@@ -649,3 +649,14 @@
 
     border-top:1px solid #e2e8f0;
 }
+
+.footer-inscricao{
+    margin-top: 60px;
+    padding: 24px;
+    text-align: center;
+
+    border-top: 1px solid #dbe2ea;
+
+    color: #6b7280;
+    font-size: 14px;
+}
