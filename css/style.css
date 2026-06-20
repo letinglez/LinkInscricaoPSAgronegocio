@@ -110,9 +110,10 @@
        
            display: flex;
            align-items: center;
-           justify-content: space-between;
        
-           gap: 40px;
+           box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+       
+           border-left: 5px solid transparent;
        }
 
         .card:hover {
@@ -124,6 +125,11 @@
            display: flex;
            align-items: center;
            gap: 24px;
+       
+           flex: 1;
+       }
+
+       .card-texto {
            flex: 1;
        }
 
@@ -218,15 +224,17 @@
 
        .btn-verde,
        .btn-azul {
-           width: 280px;
+           width: 260px;
            height: 52px;
        
            display: flex;
            align-items: center;
            justify-content: center;
        
+           margin-left: 40px;
+       
            text-align: center;
-           flex-shrink: 0;
+           white-space: nowrap;
        }
 
         /* DÚVIDAS */
