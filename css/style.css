@@ -497,3 +497,45 @@
     justify-content: space-between;
     margin-top: 40px;
 }
+
+.descricao-etapa{
+    color:#718096;
+    margin-bottom:30px;
+}
+
+.form-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.campo{
+    display:flex;
+    flex-direction:column;
+}
+
+.campo label{
+    margin-bottom:8px;
+    font-weight:600;
+    color:#1a3a6b;
+}
+
+.campo input,
+.campo select{
+    height:48px;
+    border:1px solid #d1d5db;
+    border-radius:8px;
+    padding:0 14px;
+    font-size:15px;
+}
+
+.campo input:focus,
+.campo select:focus{
+    outline:none;
+    border-color:#2d9c5c;
+    box-shadow:0 0 0 3px rgba(45,156,92,.15);
+}
+
+.largura-total{
+    grid-column:1 / -1;
+}
