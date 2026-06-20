@@ -653,7 +653,7 @@
 .footer-inscricao{
     width: 100%;
     background: #1a3a6b;
-    color: white;
+    color: #ffffff;
 
     text-align: center;
 
@@ -665,4 +665,11 @@ body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+.acoes-formulario{
+    margin-top: 40px;
+
+    display: flex;
+    gap: 16px;
 }
