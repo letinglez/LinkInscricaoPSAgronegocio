@@ -39,58 +39,9 @@
 
         <div class="card-formulario">
 
-<h2>👤 Dados do Candidato</h2>
-
-<p class="descricao-etapa">
-    Informe seus dados pessoais exatamente como constam nos documentos oficiais.
-</p>
-
-<div class="form-grid">
-
-    <div class="campo">
-        <label>Nome Completo *</label>
-        <input type="text">
-    </div>
-
-    <div class="campo">
-        <label>Data de Nascimento *</label>
-        <input type="date">
-    </div>
-
-    <div class="campo">
-        <label>CPF *</label>
-        <input type="text">
-    </div>
-
-    <div class="campo">
-        <label>Sexo *</label>
-
-        <select>
-            <option>Selecione</option>
-            <option>Feminino</option>
-            <option>Masculino</option>
-            <option>Prefiro não informar</option>
-        </select>
-    </div>
-
-    <div class="campo largura-total">
-        <label>E-mail *</label>
-        <input type="email">
-    </div>
-
-    <div class="campo largura-total">
-        <label>
-            <input type="checkbox">
-            Possui nome social?
-        </label>
-    </div>
-
-</div>
-           <div id="conteudo-etapa">
-
     <div class="secao-formulario">
 
-        <h3>👤 Dados do Candidato</h3>
+        <h3>👤 Identificação do Candidato</h3>
 
         <p class="descricao-secao">
             Informe seus dados pessoais exatamente como constam nos documentos oficiais.
@@ -99,9 +50,7 @@
         <div class="campo">
             <label>Nome Completo *</label>
             <input type="text" id="nomeCompleto">
-
-            <input type="text" id="nomeCompleto">
-
+            
 <small id="statusNome"></small>
 
             <small class="feedback">
@@ -185,67 +134,3 @@
 </body>
 
 </html>
-
-            <script>
-
-const nomeSocial =
-document.getElementById("nomeSocial");
-
-const campoNomeSocial =
-document.getElementById("campoNomeSocial");
-
-nomeSocial.addEventListener("change", () => {
-
-    if(nomeSocial.checked){
-
-        campoNomeSocial.classList.remove("oculto");
-
-    }else{
-
-        campoNomeSocial.classList.add("oculto");
-
-    }
-
-});
-
-const nome =
-document.getElementById("nomeCompleto");
-
-const statusNome =
-document.getElementById("statusNome");
-
-nome.addEventListener("input", () => {
-
-    const valor = nome.value.trim();
-
-    const regex =
-    /^[A-Za-zÀ-ÿ]+(\s+[A-Za-zÀ-ÿ]+)+$/;
-
-    if(valor.length === 0){
-
-        statusNome.innerHTML = "";
-
-        return;
-    }
-
-    if(regex.test(valor)){
-
-        statusNome.innerHTML =
-        "✅ Nome válido";
-
-        statusNome.style.color =
-        "#2d9c5c";
-
-    }else{
-
-        statusNome.innerHTML =
-        "⚠ Informe nome e sobrenome";
-
-        statusNome.style.color =
-        "#d97706";
-
-    }
-
-});
-                
-</script>
