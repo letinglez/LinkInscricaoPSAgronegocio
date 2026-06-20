@@ -108,11 +108,14 @@
            border-radius: 12px;
            padding: 30px;
        
-           display: flex;
+           display: grid;
+           grid-template-columns: 1fr 260px;
            align-items: center;
+           gap: 40px;
+       
+           margin-bottom: 24px; /* <-- espaçamento entre um card e outro na tela */
        
            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-       
            border-left: 5px solid transparent;
        }
 
