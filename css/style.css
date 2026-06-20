@@ -67,8 +67,8 @@
         }
 
        .logo-icon {
-       width: 360px;   /* tamanho do logo da ETASA no Cabeçalho */
-       height: 100px;
+       width: 420px;   /* tamanho do logo da ETASA no Cabeçalho */
+       height: 120px;
        display: flex;
        align-items: center;
        }
