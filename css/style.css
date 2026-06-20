@@ -37,20 +37,6 @@
             flex: 1;
         }
 
-       .logo-icon {
-           width: 60px;
-           height: 60px;
-           display: flex;
-           align-items: center;
-           justify-content: center;
-           flex-shrink: 0;
-       }
-
-            .logo-icon {
-           width: 70px;
-           height: 70px;
-       }
-
         .logo-text {
             color: white;
             font-size: 14px;
@@ -178,20 +164,19 @@
             color: #2d9c5c;
         }
 
-        .btn-verde {
-            background: #2d9c5c;
-            color: white;
-            text-decoration: none;
-            padding: 14px 28px;
-            border-radius: 6px;
-            font-weight: 600;
-            font-size: 14px;
-            border: none;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            white-space: nowrap;
-            margin-left: 20px;
-        }
+       .btn-verde {
+           background: #2d9c5c;
+           color: white;
+           text-decoration: none;
+           border-radius: 6px;
+           font-weight: 600;
+           font-size: 14px;
+           border: none;
+           cursor: pointer;
+           transition: all 0.3s ease;
+           white-space: nowrap;
+           margin-left: 20px;
+       }
 
         .btn-verde:hover {
             background: #248540;
@@ -212,25 +197,37 @@
             color: #2563eb;
         }
 
-        .btn-azul {
-            background: transparent;
-            border: 2px solid #2563eb;
-            color: #2563eb;
-            text-decoration: none;
-            padding: 12px 26px;
-            border-radius: 6px;
-            font-weight: 600;
-            font-size: 14px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            white-space: nowrap;
-            margin-left: 20px;
-        }
+       .btn-azul {
+           background: transparent;
+           border: 2px solid #2563eb;
+           color: #2563eb;
+           text-decoration: none;
+           border-radius: 6px;
+           font-weight: 600;
+           font-size: 14px;
+           cursor: pointer;
+           transition: all 0.3s ease;
+           white-space: nowrap;
+           margin-left: 20px;
+       }
 
         .btn-azul:hover {
             background: #2563eb;
             color: white;
         }
+
+       .btn-verde,
+       .btn-azul {
+           width: 280px;
+           height: 52px;
+       
+           display: flex;
+           align-items: center;
+           justify-content: center;
+       
+           text-align: center;
+           flex-shrink: 0;
+       }
 
         /* DÚVIDAS */
         .duvidas {
@@ -357,18 +354,7 @@
                 flex-direction: column;
             }
 
-       .btn-verde,
-       .btn-azul {
-           width: 280px;
-           height: 52px;
-       
-           display: flex;
-           align-items: center;
-           justify-content: center;
-       
-           text-align: center;
-           flex-shrink: 0;
-       }
+
                    .card-texto h3 {
                 font-size: 18px;
             }
