@@ -84,9 +84,9 @@
 
         /* CONTEÚDO */
         .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 40px 30px;
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
             flex: 1;
         }
 
@@ -134,12 +134,12 @@
             transform: translateY(-2px);
         }
 
-        .card-conteudo {
-            display: flex;
-            align-items: center;
-            gap: 25px;
-            flex: 1;
-        }
+       .card-conteudo {
+           display: flex;
+           align-items: center;
+           gap: 24px;
+           flex: 1;
+       }
 
         .icone {
             width: 80px;
@@ -357,11 +357,17 @@
                 flex-direction: column;
             }
 
-            .btn-verde,
-            .btn-azul {
-                margin-left: 0;
-                width: 100%;
-            }
+              .btn-verde,
+              .btn-azul {
+                  width: 260px;
+                  height: 52px;
+              
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+              
+                  text-align: center;
+              }
 
             .card-texto h3 {
                 font-size: 18px;
