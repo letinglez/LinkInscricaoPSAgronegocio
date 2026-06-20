@@ -86,32 +86,79 @@
     </div>
 
 </div>
-            <div id="conteudo-etapa">
+           <div id="conteudo-etapa">
 
-                <!-- Campos virão aqui -->
+    <div class="secao-formulario">
 
+        <h3>👤 Dados do Candidato</h3>
+
+        <p class="descricao-secao">
+            Informe seus dados pessoais exatamente como constam nos documentos oficiais.
+        </p>
+
+        <div class="campo">
+            <label>Nome Completo *</label>
+            <input type="text" id="nomeCompleto">
+
+            <small class="feedback">
+                Informe nome e sobrenome.
+            </small>
+        </div>
+
+        <div class="campo-checkbox">
+            <input type="checkbox" id="nomeSocial">
+            <label for="nomeSocial">
+                Possui nome social?
+            </label>
+        </div>
+
+        <div class="campo oculto" id="campoNomeSocial">
+            <label>Nome Social</label>
+            <input type="text">
+        </div>
+
+        <div class="linha">
+
+            <div class="campo">
+                <label>Data de Nascimento *</label>
+                <input type="date">
             </div>
 
-            <div class="botoes-wizard">
-                <button class="btn-secundario">Voltar</button>
-                <button class="btn-principal">Próximo</button>
+            <div class="campo">
+                <label>Sexo *</label>
+
+                <select>
+                    <option>Selecione</option>
+                    <option>Feminino</option>
+                    <option>Masculino</option>
+                    <option>Não Informar</option>
+                </select>
             </div>
 
+        </div>
+
+        <div class="campo">
+            <label>CPF *</label>
+            <input type="text" id="cpf">
+
+            <small class="feedback">
+                Digite um CPF válido.
+            </small>
+        </div>
+
+        <div class="campo">
+            <label>E-mail *</label>
+            <input type="email" id="email">
+        </div>
+
+        <div class="campo">
+            <label>Confirmar E-mail *</label>
+            <input type="email" id="emailConfirmacao">
         </div>
 
     </div>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-text">
-                © 2026 - Todos os direitos reservados.
-            </div>
-
-            <div class="footer-cebas">
-                <img src="../cebas-logo.png" alt="Logo CEBAS">
-                <span>CEBAS - Certificação de Entidades Beneficentes</span>
-            </div>
-        </div>
+</div>
     </footer>
 
 </body>
