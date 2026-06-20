@@ -83,12 +83,12 @@
 
 
         /* CONTEÚDO */
-        .container {
-            max-width: 1100px;
-            margin: 40px auto;
-            padding: 0 20px;
-            flex: 1;
-        }
+
+       .container {
+           max-width: 1300px;
+           margin: 0 auto;
+           padding: 40px 20px;
+       }
 
         .titulo {
             text-align: center;
@@ -116,18 +116,18 @@
         }
 
         /* CARDS */
-        .card {
-            background: white;
-            border-radius: 12px;
-            padding: 30px;
-            margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-            border-left: 5px solid transparent;
-            transition: all 0.3s ease;
-        }
+
+       .card {
+           background: white;
+           border-radius: 12px;
+           padding: 30px;
+       
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+       
+           gap: 40px;
+       }
 
         .card:hover {
             box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
@@ -357,19 +357,19 @@
                 flex-direction: column;
             }
 
-              .btn-verde,
-              .btn-azul {
-                  width: 260px;
-                  height: 52px;
-              
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-              
-                  text-align: center;
-              }
-
-            .card-texto h3 {
+       .btn-verde,
+       .btn-azul {
+           width: 280px;
+           height: 52px;
+       
+           display: flex;
+           align-items: center;
+           justify-content: center;
+       
+           text-align: center;
+           flex-shrink: 0;
+       }
+                   .card-texto h3 {
                 font-size: 18px;
             }
 
