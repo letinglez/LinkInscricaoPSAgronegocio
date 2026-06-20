@@ -612,18 +612,30 @@
     background:#2d9c5c;
     color:white;
     border:none;
-    padding:14px 28px;
     border-radius:8px;
+    padding:14px 30px;
     font-weight:600;
     cursor:pointer;
+    transition:.3s;
+}
+
+
+.btn-principal:hover{
+    background:#24854d;
+    transform:translateY(-2px);
 }
 
 .btn-secundario{
     background:white;
     color:#1a3a6b;
     border:2px solid #1a3a6b;
-    padding:14px 28px;
     border-radius:8px;
+    padding:14px 30px;
     font-weight:600;
     cursor:pointer;
+    transition:.3s;
+}
+
+.btn-secundario:hover{
+    background:#f5f7fa;
 }
