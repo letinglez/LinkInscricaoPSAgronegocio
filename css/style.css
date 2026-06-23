@@ -669,7 +669,11 @@ body{
 
 .acoes-formulario{
     margin-top: 40px;
+    padding-top: 20px;
+
+    border-top: 1px solid #e2e8f0;
 
     display: flex;
-    gap: 16px;
+    justify-content: space-between;
+    align-items: center;
 }
