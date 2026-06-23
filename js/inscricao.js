@@ -197,3 +197,37 @@ if(celular){
 
 }
 
+// =====================
+// CEP
+// =====================
+
+const cep = document.getElementById("cep");
+
+if(cep){
+
+    cep.addEventListener("blur", async () => {
+
+        const valor =
+        cep.value.replace(/\D/g, "");
+
+        if(valor.length !== 8)
+            return;
+
+        const resposta =
+        await fetch(`https://viacep.com.br/ws/${valor}/json/`);
+
+        const dados =
+        await resposta.json();
+
+        document.getElementById("bairro").value =
+        dados.bairro;
+
+        document.getElementById("cidade").value =
+        dados.localidade;
+
+        document.getElementById("estado").value =
+        dados.uf;
+
+    });
+
+}
