@@ -1,8 +1,4 @@
-// js/inscricao.js
-
-// ETAPA 1
-
-// Nome Social
+// NOME SOCIAL
 
 const nomeSocial =
 document.getElementById("nomeSocial");
@@ -24,7 +20,7 @@ if(nomeSocial && campoNomeSocial){
 
 }
 
-// Nome Completo 
+// NOME COMPLETO
 
 const nome =
 document.getElementById("nomeCompleto");
@@ -36,84 +32,95 @@ if(nome && statusNome){
 
     nome.addEventListener("input", () => {
 
-        // código existente
+        const valor =
+        nome.value.trim();
+
+        const regex =
+        /^[A-Za-zÀ-ÿ]+(\s+[A-Za-zÀ-ÿ]+)+$/;
+
+        if(valor.length === 0){
+
+            statusNome.innerHTML = "";
+            return;
+
+        }
+
+        if(regex.test(valor)){
+
+            statusNome.innerHTML =
+            "✅ Nome válido";
+
+            statusNome.style.color =
+            "#2d9c5c";
+
+        }else{
+
+            statusNome.innerHTML =
+            "⚠ Informe nome e sobrenome";
+
+            statusNome.style.color =
+            "#d97706";
+
+        }
 
     });
 
 }
-    const valor = nome.value.trim();
-
-    const regex =
-    /^[A-Za-zÀ-ÿ]+(\s+[A-Za-zÀ-ÿ]+)+$/;
-
-    if(valor.length === 0){
-
-        statusNome.innerHTML = "";
-        return;
-
-    }
-
-    if(regex.test(valor)){
-
-        statusNome.innerHTML = "✅ Nome válido";
-        statusNome.style.color = "#2d9c5c";
-
-    } else {
-
-        statusNome.innerHTML =
-        "⚠ Informe nome e sobrenome";
-
-        statusNome.style.color =
-        "#d97706";
-
-    }
-
-});
 
 // CPF
 
-const cpf = document.getElementById("cpf");
-const statusCpf = document.getElementById("statusCpf");
+const cpf =
+document.getElementById("cpf");
+
+const statusCpf =
+document.getElementById("statusCpf");
 
 if(cpf && statusCpf){
 
     cpf.addEventListener("input", () => {
 
-        // código existente
+        let valor =
+        cpf.value.replace(/\D/g, "");
 
-    });
+        valor =
+        valor.replace(/^(\d{3})(\d)/, "$1.$2");
 
-if(cpf && statusCpf){
+        valor =
+        valor.replace(/^(\d{3})\.(\d{3})(\d)/, "$1.$2.$3");
 
-    cpf.addEventListener("input", () => {
+        valor =
+        valor.replace(/\.(\d{3})(\d)/, ".$1-$2");
 
-        // código existente
+        cpf.value =
+        valor.substring(0, 14);
 
     });
 
     cpf.addEventListener("blur", () => {
 
-        // código existente
+        if(validarCPF(cpf.value)){
+
+            statusCpf.innerHTML =
+            "✅ CPF válido";
+
+            statusCpf.style.color =
+            "#2d9c5c";
+
+        }else{
+
+            statusCpf.innerHTML =
+            "❌ CPF inválido";
+
+            statusCpf.style.color =
+            "#dc2626";
+
+        }
 
     });
 
 }
-        // código existente
 
-    });
-
-}
-    let valor = cpf.value.replace(/\D/g, "");
-
-    valor = valor.replace(/^(\d{3})(\d)/, "$1.$2");
-    valor = valor.replace(/^(\d{3})\.(\d{3})(\d)/, "$1.$2.$3");
-    valor = valor.replace(/\.(\d{3})(\d)/, ".$1-$2");
-
-    cpf.value = valor.substring(0, 14);
-
-});
-
-function validarCPF(cpf) {
+function validarCPF(cpf){
 
     cpf = cpf.replace(/\D/g, "");
 
@@ -125,8 +132,9 @@ function validarCPF(cpf) {
 
     let soma = 0;
 
-    for(let i = 0; i < 9; i++)
+    for(let i = 0; i < 9; i++){
         soma += parseInt(cpf.charAt(i)) * (10 - i);
+    }
 
     let resto = (soma * 10) % 11;
 
@@ -138,8 +146,9 @@ function validarCPF(cpf) {
 
     soma = 0;
 
-    for(let i = 0; i < 10; i++)
+    for(let i = 0; i < 10; i++){
         soma += parseInt(cpf.charAt(i)) * (11 - i);
+    }
 
     resto = (soma * 10) % 11;
 
@@ -147,29 +156,8 @@ function validarCPF(cpf) {
         resto = 0;
 
     return resto === parseInt(cpf.charAt(10));
+
 }
-
-cpf.addEventListener("blur", () => {
-
-    if(validarCPF(cpf.value)){
-
-        statusCpf.innerHTML =
-        "✅ CPF válido";
-
-        statusCpf.style.color =
-        "#2d9c5c";
-
-    }else{
-
-        statusCpf.innerHTML =
-        "❌ CPF inválido";
-
-        statusCpf.style.color =
-        "#dc2626";
-
-    }
-
-});
 
 // E-MAIL
 
@@ -183,94 +171,26 @@ if(email && statusEmail){
 
     email.addEventListener("blur", () => {
 
-        // código existente
+        const regex =
+        /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    });
+        if(regex.test(email.value)){
 
-}
-    const regex =
-    /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            statusEmail.innerHTML =
+            "✅ E-mail válido";
 
-    if(regex.test(email.value)){
+            statusEmail.style.color =
+            "#2d9c5c";
 
-        statusEmail.innerHTML =
-        "✅ E-mail válido";
+        }else{
 
-        statusEmail.style.color =
-        "#2d9c5c";
+            statusEmail.innerHTML =
+            "❌ E-mail inválido";
 
-    }else{
+            statusEmail.style.color =
+            "#dc2626";
 
-        statusEmail.innerHTML =
-        "❌ E-mail inválido";
-
-        statusEmail.style.color =
-        "#dc2626";
-
-    }
-
-});
-
-
-// ETAPA 2
-
-// =====================
-// CELULAR
-// =====================
-
-const celular =
-document.getElementById("celular");
-
-if(celular){
-
-    celular.addEventListener("input", () => {
-
-        let valor =
-        celular.value.replace(/\D/g, "");
-
-        valor =
-        valor.replace(/^(\d{2})(\d)/g, "($1) $2");
-
-        valor =
-        valor.replace(/(\d{5})(\d)/, "$1-$2");
-
-        celular.value =
-        valor.substring(0, 15);
-
-    });
-
-}
-
-// =====================
-// CEP
-// =====================
-
-const cep = document.getElementById("cep");
-
-if(cep){
-
-    cep.addEventListener("blur", async () => {
-
-        const valor =
-        cep.value.replace(/\D/g, "");
-
-        if(valor.length !== 8)
-            return;
-
-        const resposta =
-        await fetch(`https://viacep.com.br/ws/${valor}/json/`);
-
-        const dados =
-        await resposta.json();
-
-        document.getElementById("bairro").value =
-        dados.bairro;
-
-        document.getElementById("cidade").value =
-        dados.localidade;
-
-        document.getElementById("estado").value =
-        dados.uf;
+        }
 
     });
 
