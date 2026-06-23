@@ -10,15 +10,19 @@ document.getElementById("nomeSocial");
 const campoNomeSocial =
 document.getElementById("campoNomeSocial");
 
-nomeSocial.addEventListener("change", () => {
+if(nomeSocial && campoNomeSocial){
 
-    if(nomeSocial.checked){
-        campoNomeSocial.classList.remove("oculto");
-    } else {
-        campoNomeSocial.classList.add("oculto");
-    }
+    nomeSocial.addEventListener("change", () => {
 
-});
+        if(nomeSocial.checked){
+            campoNomeSocial.classList.remove("oculto");
+        } else {
+            campoNomeSocial.classList.add("oculto");
+        }
+
+    });
+
+}
 
 // Nome Completo 
 
@@ -28,8 +32,15 @@ document.getElementById("nomeCompleto");
 const statusNome =
 document.getElementById("statusNome");
 
-nome.addEventListener("input", () => {
+if(nome && statusNome){
 
+    nome.addEventListener("input", () => {
+
+        // código existente
+
+    });
+
+}
     const valor = nome.value.trim();
 
     const regex =
@@ -64,8 +75,34 @@ nome.addEventListener("input", () => {
 const cpf = document.getElementById("cpf");
 const statusCpf = document.getElementById("statusCpf");
 
-cpf.addEventListener("input", () => {
+if(cpf && statusCpf){
 
+    cpf.addEventListener("input", () => {
+
+        // código existente
+
+    });
+
+if(cpf && statusCpf){
+
+    cpf.addEventListener("input", () => {
+
+        // código existente
+
+    });
+
+    cpf.addEventListener("blur", () => {
+
+        // código existente
+
+    });
+
+}
+        // código existente
+
+    });
+
+}
     let valor = cpf.value.replace(/\D/g, "");
 
     valor = valor.replace(/^(\d{3})(\d)/, "$1.$2");
@@ -142,8 +179,15 @@ document.getElementById("email");
 const statusEmail =
 document.getElementById("statusEmail");
 
-email.addEventListener("blur", () => {
+if(email && statusEmail){
 
+    email.addEventListener("blur", () => {
+
+        // código existente
+
+    });
+
+}
     const regex =
     /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
