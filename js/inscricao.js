@@ -1,5 +1,9 @@
 // js/inscricao.js
 
+// ETAPA 1
+
+// Nome Social
+
 const nomeSocial =
 document.getElementById("nomeSocial");
 
@@ -15,6 +19,8 @@ nomeSocial.addEventListener("change", () => {
     }
 
 });
+
+// Nome Completo 
 
 const nome =
 document.getElementById("nomeCompleto");
@@ -52,6 +58,8 @@ nome.addEventListener("input", () => {
     }
 
 });
+
+// CPF
 
 const cpf = document.getElementById("cpf");
 const statusCpf = document.getElementById("statusCpf");
@@ -126,6 +134,8 @@ cpf.addEventListener("blur", () => {
 
 });
 
+// E-MAIL
+
 const email =
 document.getElementById("email");
 
@@ -156,3 +166,34 @@ email.addEventListener("blur", () => {
     }
 
 });
+
+
+// ETAPA 2
+
+// =====================
+// CELULAR
+// =====================
+
+const celular =
+document.getElementById("celular");
+
+if(celular){
+
+    celular.addEventListener("input", () => {
+
+        let valor =
+        celular.value.replace(/\D/g, "");
+
+        valor =
+        valor.replace(/^(\d{2})(\d)/g, "($1) $2");
+
+        valor =
+        valor.replace(/(\d{5})(\d)/, "$1-$2");
+
+        celular.value =
+        valor.substring(0, 15);
+
+    });
+
+}
+
