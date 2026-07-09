@@ -612,6 +612,7 @@
     background:#2d9c5c;
     color:white;
     border:none;
+    text-decoration: none;
     border-radius:8px;
     padding:14px 30px;
     font-weight:600;
@@ -628,6 +629,7 @@
 .btn-secundario{
     background:white;
     color:#1a3a6b;
+    text-decoration: none;
     border:2px solid #1a3a6b;
     border-radius:8px;
     padding:14px 30px;
