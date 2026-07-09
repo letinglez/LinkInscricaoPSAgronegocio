@@ -195,3 +195,43 @@ if(email && statusEmail){
     });
 
 }
+
+
+const emailConfirmacao =
+document.getElementById("emailConfirmacao");
+
+const statusConfirmacaoEmail =
+document.getElementById("statusConfirmacaoEmail");
+
+if(email && emailConfirmacao && statusConfirmacaoEmail){
+
+    emailConfirmacao.addEventListener("input", () => {
+
+        if(emailConfirmacao.value.length === 0){
+
+            statusConfirmacaoEmail.innerHTML = "";
+            return;
+
+        }
+
+        if(email.value === emailConfirmacao.value){
+
+            statusConfirmacaoEmail.innerHTML =
+            "✅ Os e-mails conferem";
+
+            statusConfirmacaoEmail.style.color =
+            "#2d9c5c";
+
+        }else{
+
+            statusConfirmacaoEmail.innerHTML =
+            "❌ Os e-mails não conferem";
+
+            statusConfirmacaoEmail.style.color =
+            "#dc2626";
+
+        }
+
+    });
+
+}
