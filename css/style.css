@@ -543,13 +543,14 @@ footer {
     border-top:1px solid #e2e8f0;
 }
 
+/* =========================
+   RODAPÉ
+========================= */
+
 footer {
-    background: #1a3a6b;
-    color: white;
+    width: 100%;
+    margin-top: 50px;
     text-align: center;
-    padding: 25px 30px;
-    font-size: 14px;
-    margin-top: auto;
 }
 
 /* Faixa branca */
@@ -568,6 +569,7 @@ footer {
 
 .footer-topo p {
     margin: 0;
+    color: #111827;
     font-size: 14px;
     line-height: 1.5;
 }
@@ -585,6 +587,10 @@ footer {
     margin: 0;
     font-size: 14px;
 }
+
+/* =========================
+   
+========================= */
 
 body{
     min-height: 100vh;
