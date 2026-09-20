@@ -292,8 +292,7 @@
 ========================= */
 
 footer {
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
+    width: 100%;
     margin-top: auto;
     text-align: center;
 }
@@ -554,11 +553,12 @@ footer {
 
 footer {
     width: 100%;
-    margin-top: 50px;
+    margin-top: auto;
     text-align: center;
 }
 
-/* Faixa branca */
+/* FAIXA BRANCA */
+
 .footer-topo {
     width: 100%;
     background: #ffffff;
@@ -579,7 +579,9 @@ footer {
     line-height: 1.5;
 }
 
-/* Faixa azul */
+
+/* FAIXA AZUL */
+
 .footer-base {
     width: 100%;
     background: #1a3a6b;
