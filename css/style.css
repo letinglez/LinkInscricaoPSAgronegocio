@@ -543,15 +543,47 @@ footer {
     border-top:1px solid #e2e8f0;
 }
 
-.footer-inscricao{
+.footer-inscricao {
+    width: 100%;
+    background: #ffffff;
+    color: #111827;
+    text-align: center;
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+
+/* Faixa branca */
+.footer-topo {
+    width: 100%;
+    background: #ffffff;
+    padding: 18px 20px;
+    box-sizing: border-box;
+}
+
+.footer-topo img {
+    width: 95px;
+    height: auto;
+    margin-bottom: 8px;
+}
+
+.footer-topo p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Faixa azul */
+.footer-base {
     width: 100%;
     background: #1a3a6b;
     color: #ffffff;
+    padding: 16px 20px;
+    box-sizing: border-box;
+}
 
-    text-align: center;
-
-    padding: 25px;
-    margin-top: 50px;
+.footer-base p {
+    margin: 0;
+    font-size: 14px;
 }
 
 body{
