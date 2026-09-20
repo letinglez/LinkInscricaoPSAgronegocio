@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Nova Inscrição - Etapa 3</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<header>
+  <div class="logo-icon">
+    <img src="../img/logo-etasa.png" alt="ETASA">
+  </div>
+</header>
+
+
+<div class="container-inscricao">
+
+  <div class="wizard-header">
+
+    <h1>Nova Inscrição</h1>
+
+    <p class="etapa-atual">Etapa 3 de 9</p>
+
+    <div class="progress-bar">
+      <div class="progress-fill" style="width: 33.33%;"></div>
+    </div>
+
+  </div>
+
+
+  <div class="card-formulario">
+
+    <div class="secao-formulario">
+
+      <h3>🎓 Escolaridade</h3>
+
+      <p class="descricao-secao">
+        Informe sua situação escolar atual.
+      </p>
+
+
+      <div class="campo">
+
+        <label for="situacaoEnsinoMedio">
+          Situação do Ensino Médio *
+        </label>
+
+        <select id="situacaoEnsinoMedio">
+
+          <option value="">
+            Selecione uma opção
+          </option>
+
+          <option value="cursando">
+            Cursando
+          </option>
+
+          <option value="concluido">
+            Concluído
+          </option>
+
+        </select>
+
+      </div>
+
+
+      <!-- CAMPOS PARA QUEM ESTÁ CURSANDO -->
+
+      <div id="camposCursando" class="oculto">
+
+        <div class="campo">
+
+          <label for="anoSerieAtual">
+            Ano/Série atual *
+          </label>
+
+          <select id="anoSerieAtual">
+
+            <option value="">
+              Selecione uma opção
+            </option>
+
+            <option value="2">
+              2º ano
+            </option>
+
+            <option value="3">
+              3º ano
+            </option>
+
+          </select>
+
+          <small class="feedback">
+            Informe o ano que está cursando atualmente.
+          </small>
+
+        </div>
+
+      </div>
+
+
+      <!-- CAMPO PARA QUEM JÁ CONCLUIU -->
+
+      <div id="campoConcluido" class="oculto">
+
+        <div class="campo">
+
+          <label for="anoConclusao">
+            Ano de conclusão *
+          </label>
+
+          <input
+            type="text"
+            id="anoConclusao"
+            inputmode="numeric"
+            maxlength="4"
+            placeholder="Ex.: 2025"
+          >
+
+          <small class="feedback">
+            Informe o ano em que concluiu o Ensino Médio.
+          </small>
+
+        </div>
+
+      </div>
+
+
+      <!-- ESCOLA -->
+
+      <div class="campo">
+
+        <label for="nomeEscola">
+          Nome da escola do Ensino Médio *
+        </label>
+
+        <input
+          type="text"
+          id="nomeEscola"
+          placeholder="Digite o nome da escola"
+        >
+
+      </div>
+
+    </div>
+
+
+    <div class="acoes-formulario">
+
+      <a href="inscricao-etapa2.html" class="btn-secundario">
+        ← Voltar
+      </a>
+
+      <a href="inscricao-etapa4.html" class="btn-principal">
+        Próximo →
+      </a>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<footer class="footer-inscricao">
+
+  <p>Dúvidas? Consulte o Manual do Candidato.</p>
+
+  <p>© 2026 Fundação Salvador Arena</p>
+
+  <p>Processo Seletivo – Escola Técnica Agropecuária</p>
+
+</footer>
+
+
+<script src="../js/inscricao-etapa3.js"></script>
+
+</body>
+</html>
