@@ -543,13 +543,13 @@ footer {
     border-top:1px solid #e2e8f0;
 }
 
-.footer-inscricao {
-    width: 100%;
-    background: #ffffff;
-    color: #111827;
+footer {
+    background: #1a3a6b;
+    color: white;
     text-align: center;
-    margin-top: 50px;
-    box-sizing: border-box;
+    padding: 25px 30px;
+    font-size: 14px;
+    margin-top: auto;
 }
 
 /* Faixa branca */
