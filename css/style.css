@@ -292,16 +292,18 @@
 ========================= */
 
 footer {
-    width: 100%;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
     margin-top: auto;
     text-align: center;
 }
 
 /* Faixa branca */
 .footer-topo {
+    width: 100%;
     background: #ffffff;
-    text-align: center;
     padding: 18px 20px;
+    box-sizing: border-box;
 }
 
 .footer-topo img {
@@ -314,19 +316,21 @@ footer {
     margin: 0;
     color: #111827;
     font-size: 14px;
+    line-height: 1.5;
 }
 
 /* Faixa azul */
 .footer-base {
+    width: 100%;
     background: #1a3a6b;
-    color: white;
-    text-align: center;
+    color: #ffffff;
     padding: 16px 20px;
-    font-size: 14px;
+    box-sizing: border-box;
 }
 
 .footer-base p {
     margin: 0;
+    font-size: 14px;
 }
 
 
