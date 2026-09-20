@@ -578,9 +578,11 @@
     box-shadow:0 0 0 3px rgba(45,156,92,.15);
 }
 
-.feedback{
-    color:#64748b;
-    font-size:13px;
+.feedback {
+  display: block;
+  margin-top: 6px;
+  font-size: 13px;
+  color: #64748b;
 }
 
 .linha{
