@@ -548,47 +548,61 @@ footer {
 }
 
 /* =========================
-   RODAPÉ DA INSCRIÇÃO
-========================= */
+   RODAPÉ
+========================== */
 
-.footer-inscricao {
-    display: block;
+footer {
     width: 100%;
-    max-width: none;
-    margin: 50px 0 0 0;
+    margin: 0;
     padding: 0;
-    text-align: center;
-    box-sizing: border-box;
+    background: transparent;
 }
 
-.footer-inscricao .footer-topo {
+/* FAIXA BRANCA - IDENTIFICAÇÃO INSTITUCIONAL */
+
+.footer-topo {
     width: 100%;
     background: #ffffff;
-    padding: 18px 20px;
+
+    text-align: center;
+
+    padding: 20px 20px 18px;
+
     box-sizing: border-box;
 }
 
-.footer-inscricao .footer-topo img {
+.footer-topo img {
     width: 95px;
     height: auto;
-    margin-bottom: 8px;
+
+    display: block;
+    margin: 0 auto 10px;
 }
 
-.footer-inscricao .footer-topo p {
+.footer-topo p {
     margin: 0;
+
     color: #111827;
     font-size: 14px;
 }
 
-.footer-inscricao .footer-base {
+
+/* FAIXA AZUL - COPYRIGHT */
+
+.footer-base {
     width: 100%;
     background: #1a3a6b;
+
     color: #ffffff;
+
+    text-align: center;
+
     padding: 16px 20px;
+
     box-sizing: border-box;
 }
 
-.footer-inscricao .footer-base p {
+.footer-base p {
     margin: 0;
     font-size: 14px;
 }
