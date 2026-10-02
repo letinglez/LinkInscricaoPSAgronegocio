@@ -548,41 +548,35 @@ footer {
 }
 
 /* =========================
-   RODAPÉ
+   RODAPÉ DA INSCRIÇÃO
 ========================= */
 
-footer {
+.footer-inscricao {
     width: 100%;
-    margin-top: auto;
+    margin-top: 50px;
     text-align: center;
 }
 
-/* FAIXA BRANCA */
-
-.footer-topo {
+.footer-inscricao .footer-topo {
     width: 100%;
     background: #ffffff;
     padding: 18px 20px;
     box-sizing: border-box;
 }
 
-.footer-topo img {
+.footer-inscricao .footer-topo img {
     width: 95px;
     height: auto;
     margin-bottom: 8px;
 }
 
-.footer-topo p {
+.footer-inscricao .footer-topo p {
     margin: 0;
     color: #111827;
     font-size: 14px;
-    line-height: 1.5;
 }
 
-
-/* FAIXA AZUL */
-
-.footer-base {
+.footer-inscricao .footer-base {
     width: 100%;
     background: #1a3a6b;
     color: #ffffff;
@@ -590,7 +584,7 @@ footer {
     box-sizing: border-box;
 }
 
-.footer-base p {
+.footer-inscricao .footer-base p {
     margin: 0;
     font-size: 14px;
 }
